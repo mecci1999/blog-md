@@ -88,7 +88,7 @@ Pick 关键词是[2.1版本](https://www.typescriptlang.org/docs/handbook/releas
     // 推导
     type PersonWithoutLocation = Pick<Person, Exclude<keyof Person, "location">>;
     // 推导
-    type PersonWithoutLocation = Pick<Person, Exclude<["name","age","location"], "location">>;
+    type PersonWithoutLocation = Pick<Person, Exclude<("name","age","location"), "location">>;
     // 推导
     type PersonWithoutLocation = Pick<Person,"name","age">;
     // 推导
